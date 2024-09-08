@@ -1,6 +1,5 @@
-
-  const collapsibles = document.querySelectorAll(".collapsible");
-
+// collapsibes --------------
+const collapsibles = document.querySelectorAll(".collapsible");
     if (collapsibles.length !== 0) {
         console.log('ll')
         collapsibles.forEach((collapsible) => {
@@ -11,9 +10,30 @@
             if (content.style.display === "block") {
                 content.style.display = "none";
             } else {
-                // collapsible.classList.remove("active");
               content.style.display = "block";
             }
           });
         });
     }
+// info sm slider ----------
+const infoSwiper = new Swiper(".swiper-info-sm", {
+  loop: true,
+  pagination: {
+    el: ".pagination-info-sm",
+  },
+  navigation: {
+    nextEl: ".next-info-sm",
+    prevEl: ".prev-info-sm",
+  },
+});
+// home slider ----------
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});

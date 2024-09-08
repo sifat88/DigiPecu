@@ -8,460 +8,430 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
     <link rel="stylesheet" href="./src/css/style.css">
 
 </head>
 <body>
     <header>
-        <div class="top__bar">
-                <div class="container">
-                <p>The listings featured on this site are from companies from which this site receives compensation. This may influence where, how and in what order such listings appear on this site </p>
-                <p>Advertising Disclosure</p>
-            </div>
-        </div>
-        <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-    {
-    "symbols": [
-        {
-        "proName": "FOREXCOM:SPXUSD",
-        "title": "S&P 500 Index"
-        },
-        {
-        "proName": "FOREXCOM:NSXUSD",
-        "title": "US 100 Cash CFD"
-        },
-        {
-        "proName": "FX_IDC:EURUSD",
-        "title": "EUR to USD"
-        },
-        {
-        "proName": "BITSTAMP:BTCUSD",
-        "title": "Bitcoin"
-        },
-        {
-        "proName": "BITSTAMP:ETHUSD",
-        "title": "Ethereum"
-        }
-    ],
-    "showSymbolLogo": false,
-    "isTransparent": false,
-    "displayMode": "adaptive",
-    "colorTheme": "light",
-    "locale": "en",
-    }
-    </script>
-</div>
-<!-- TradingView Widget END -->
         <div class="logo__bar">
             <div class="container">
-                <img src="./src/img/dp-logo-black.svg" alt="Digital Pecunia">
+                <a href="index.html"><img src="./src/img/dp-logo-black.svg" alt="Digital Pecunia"></a>
                 <button class="collapsible">
                     <svg class="collapsible" width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L3.82843 3.82843L6.65685 1" stroke="#212427" stroke-width="1.6" stroke-linecap="round"/>
                     </svg>
                 </button>
 
-                <div class="logo__bar--text">
-                    <p>The investing information provided on this page is for educational purposes only.</p>
-                    <p>For more information click <a href="#">here</a></p>
+                <div class="logo__bar--menu">
+                    <a href="#">About us</a>
+                    <a href="#">Partner with Us</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <section>
+        <section class="welcome__section">
             <div class="container">
-                <div class="page__title">
-                    <div class="post__date">
-                        <img src="./src/img/check.svg" alt="check">
-                        <p>Ultimo aggiornamento <span>14 giugno</span></p>
+                <h1>Discover and compare <span>the top financial products</span> for every stage of life</h1>
+                <div class="feature__flex">
+                    <div class="feature__box">
+                        <img src="./src/img/bank.svg" alt="icon">
+                        <p>Current <br> Account</p>
                     </div>
-                    <h1 class="post-title">3 best <span>Stock Market Apps</span> of 2023</h1>
-                    <div class="post__subtext">
-                        <p>Invest today, protect tomorrow</p>
-                        <p>Compare the best brokerage accounts and trading platforms to choose one that suits you. Buy stocks, invest in index funds, S&P 500, & more to secure your future.</p>
+                    <div class="feature__box">
+                        <img src="./src/img/card.svg" alt="icon">
+                        <p>Credit &<br> Debit cards</p>
+                    </div>
+                    <div class="feature__box">
+                        <img src="./src/img/vault.svg" alt="icon">
+                        <p>Savings <br> Account</p>
+                    </div>
+                    <div class="feature__box">
+                        <img src="./src/img/transfer.svg" alt="icon">
+                        <p>Money <br> Transfer</p>
+                    </div>
+                    <div class="feature__box">
+                        <img src="./src/img/brokerage.svg" alt="icon">
+                        <p>Brokerage <br> Account</p>
                     </div>
                 </div>
+                <p class="subtext">We guide you through each financial milestonewith expert insights and tailored solutions</p>
+                <svg width="18" height="10" style="margin: 0 auto;" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.92893 1.07107L9 8.14214L16.0711 1.07107" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="welcome__text">
+                    <h3>Welcome to Digital Pecunia</h3>
+                    <p>Your go-to platform for comparing and selecting the best financial products. We provide you with the tools and insights to navigate your financial journey with confidence.</p>
+                    <div class="letter-p">
+                        <img src="./src/img/P.svg" alt="Digital Pecunia">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info__section">
+            <div class="container">
+                <div class="info-flex">
+                    <div class="info__box">
+                        <img src="./src/img/compare.svg" alt="compare">
+                        <h3>compare</h3>
+                        <p>Leverage clear and effective information to compare options for services such as loans, brokerage, and insurance.</p>
+                    </div>
+                    <div class="info__box">
+                        <img src="./src/img/deep-dive.svg" alt="compare">
+                        <h3>Deep Dive</h3>
+                        <p>Gain a deeper understanding of your choices with our comprehensive reviews and expert guides.</p>
+                    </div>
+                    <div class="info__box">
+                        <img src="./src/img/choose.svg" alt="compare">
+                        <h3>choose</h3>
+                        <p>Make an informed decision and select the best solution from top providers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info__swiper">
+            <div class="swiper swiper-info-sm">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="info__box">
+                        <img src="./src/img/compare.svg" alt="compare">
+                        <h3>compare</h3>
+                        <p>Leverage clear and effective information to compare options for services such as loans, brokerage, and insurance.</p>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="info__box">
+                        <img src="./src/img/deep-dive.svg" alt="compare">
+                        <h3>Deep Dive</h3>
+                        <p>Gain a deeper understanding of your choices with our comprehensive reviews and expert guides.</p>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                    <div class="info__box">
+                        <img src="./src/img/choose.svg" alt="compare">
+                        <h3>choose</h3>
+                        <p>Make an informed decision and select the best solution from top providers.</p>
+                    </div>
+                    </div>
+                </div>
+            <div class="swiper-pagination pagination-info-sm"></div>
+            <div class="swiper-button-prev prev-info-sm"></div>
+            <div class="swiper-button-next next-info-sm"></div>
             </div>
         </section>
         <section class="cards__section">
+            <div class="lifted__top"></div>
             <div class="container">
-                <div class="flex-wrapper">
-                    <div class="cards__block">
-                        <div class="card__each">
-                            <div class="card__ribbon" data-label="Fast Repayment"></div>
-                            <span class="card__order">1</span>
-                            <div class="card__logo">
-                                <img src="./src/img/jp-morgan.png" alt="jp-morgan">
-                                <div class="card__rating">
-                                    <p>9.8</p>
-                                    <div class="rating__block">
-                                        <div class="Stars" style="--rating: 4.3;"></div>
-                                        <p>Pecunia Score</p>
-                                        <div class="rating__hoverbox">
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/thumbs-up.svg" alt="icon">
-                                                    <p>9.8</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Popularity</p>
-                                                    <p>Based on visits in the past 7 days</p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/click.svg" alt="icon">
-                                                    <p>9.8</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Brand Reputation</p>
-                                                    <p>Based on web trends</p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/check.svg" alt="icon">
-                                                    <p>9.9</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Feature & Benefits</p>
-                                                    <p>Based on our <a href="">editorial reviews</a></p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__deatils">
-                                <h3>J. P. Morgan</h3>
-                                <p>Build your portfolio & start trading with J.P. Morgan Self-Directed Investing</p>
-                                <ul>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>No minimum to open an account & start trading</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Unlimited commission-free online trades</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Get up to $700 when opening a new account⁵</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span><b>Easy access on the Chase Mobile® app</b></span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card__cta">
-                                <a href="#">Visit site
-                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    </svg>
-                                </a>
-                                <p>75% of retail investor accounts lose money when trading leveraged products with this provider.</p>
-                            </div>
-                        </div>
-                        <div class="card__each">
-                            <span class="card__order">2</span>
-                            <div class="card__logo">
-                                <img src="./src/img/sofi.png" alt="sofi">
-                                <div class="card__rating">
-                                    <p>9.4</p>
-                                    <div class="rating__block">
-                                        <div class="Stars" style="--rating: 4.3;"></div>
-                                        <p>Pecunia Score</p>
-                                        <div class="rating__hoverbox">
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/thumbs-up.svg" alt="icon">
-                                                    <p>9.8</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Popularity</p>
-                                                    <p>Based on visits in the past 7 days</p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/click.svg" alt="icon">
-                                                    <p>9.8</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Brand Reputation</p>
-                                                    <p>Based on web trends</p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/check.svg" alt="icon">
-                                                    <p>9.9</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Feature & Benefits</p>
-                                                    <p>Based on our <a href="">editorial reviews</a></p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__deatils">
-                                <h3>SoFi</h3>
-                                <p>Build a diversified portfolio and start automated investing</p>
-                                <ul>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>No-commission stock, ETF, and IPO investing</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Trade stocks, ETFs and 30 cryptocurrencies</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Virtual assistant available 24/7⁵</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card__cta">
-                                <a href="#">Visit site
-                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    </svg>
-                                </a>
-                                <p>75% of retail investor accounts lose money when trading leveraged products with this provider.</p>
-                            </div>
-                        </div>
-                        <div class="card__each">
-                            <span class="card__order">3</span>
-                            <div class="card__logo">
-                                <img src="./src/img/acorns.png" alt="acorns">
-                                <div class="card__rating">
-                                    <p>9.8</p>
-                                    <div class="rating__block">
-                                        <div class="Stars" style="--rating: 4.3;"></div>
-                                        <p>Pecunia Score</p>
-                                        <div class="rating__hoverbox">
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/thumbs-up.svg" alt="icon">
-                                                    <p>9.8</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Popularity</p>
-                                                    <p>Based on visits in the past 7 days</p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/click.svg" alt="icon">
-                                                    <p>9.8</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Brand Reputation</p>
-                                                    <p>Based on web trends</p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="rating__details">
-                                                <div class="rating__icon">
-                                                    <img src="./src/img/check.svg" alt="icon">
-                                                    <p>9.9</p>
-                                                </div>
-                                                <div class="rating__text">
-                                                    <p>Feature & Benefits</p>
-                                                    <p>Based on our <a href="">editorial reviews</a></p>
-                                                    <div class="rating__bar">
-                                                        <span></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__deatils">
-                                <h3>Acorns</h3>
-                                <p>Easy and automated investing using your spare change</p>
-                                <ul>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Invest spare change using Round-Ups</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Diversified portfolio picked by experts</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>View your performance through the mobile app</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card__cta">
-                                <a href="#">Visit site
-                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                    </svg>
-                                </a>
-                                <p>75% of retail investor accounts lose money when trading leveraged products with this provider.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sidebar">
-                        <div class="visitor__board">
-                            <img src="./src/img/chart-board.svg" alt="visit">
-                            <div>
-                                <p><span>12,664 people</span> visited a brokerage account this week</p>
-                            </div>
-                        </div>
-                        <div class="pecunia__score">
-                            <div class="title">
-                                <img src="./src/img/star.svg" alt="star">
-                                <p>Pecunia Score</p>
-                            </div>
-                            <p>Our product scores consist of a combination of the following 3 components:</p>
-                            <div class="score__breakdown">
-                                <div class="breakdown__header collapsible">
-                                    <div class="score__name">
-                                        <img src="./src/img/thumb-outline.svg" alt="icon">
-                                        <span>Popularity</span>
-                                    </div>
-                                    <button><img src="./src/img/down-arrow.svg" alt="arrow"></button>
-                                </div>
-                                <div class="breakdown__body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ratione iste rem doloribus maxime molestias facilis ullam nihil quia cumque.</p>
-                                </div>
-                            </div>
-                            <div class="score__breakdown">
-                                <div class="breakdown__header collapsible">
-                                    <div class="score__name">
-                                        <img src="./src/img/click-outline.svg" alt="icon">
-                                        <span>Brand Reputation</span>
-                                    </div>
-                                    <button><img src="./src/img/down-arrow.svg" alt="arrow"></button>
-                                </div>
-                                <div class="breakdown__body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ratione iste rem doloribus maxime molestias facilis ullam nihil quia cumque.</p>
-                                </div>
-                            </div>
-                            <div class="score__breakdown">
-                                <div class="breakdown__header collapsible">
-                                    <div class="score__name">
-                                        <img src="./src/img/check-outline.svg" alt="icon">
-                                        <span>Feature & Benefits</span>
-                                    </div>
-                                    <button><img src="./src/img/down-arrow.svg" alt="arrow"></button>
-                                </div>
-                                <div class="breakdown__body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ratione iste rem doloribus maxime molestias facilis ullam nihil quia cumque.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ssl__trust">
-                            <img src="./src/img/ssl-trust.svg" alt="visit">
-                            <div>
-                                <p><span>Your privacy is protected.</span> All featured brands are licensed and secure.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="faq__section">
-            <div class="container">
-                <div class="faq__each">
-                    <h3>What are Online Brokers?</h3>
-                    <p>Online brokers are financial services companies that provide individuals with a platform to buy and sell securities such as stocks, bonds, options, and other investment products over the internet. These platforms have revolutionized the way people invest in securities, making it easier and more accessible for individuals to invest their money. There are different types of online brokers, including discount brokers, full-service brokers, and robo-advisors, each offering a range of services and features to investors.</p>
-                </div>
-                <div class="faq__each">
-                    <h3>When Should You Use Online Brokers?</h3>
-                    <p>You should use online brokers if you are comfortable with making investment decisions on your own and prefer to have control over your investments. Online brokers are also ideal if you are looking for a low-cost way to invest in securities and want the flexibility to trade at any time from anywhere. However, if you require professional guidance or advice, a full-service broker may be a better option.</p>
-                </div>
-                <div class="faq__each">
-                    <h3>Why Should You Use Online Brokers?</h3>
-                    <p>You should use online brokers if you are comfortable with making investment decisions on your own and prefer to have control over your investments. Online brokers are also ideal if you are looking for a low-cost way to invest in securities and want the flexibility to trade at any time from anywhere. However, if you require professional guidance or advice, a full-service broker may be a better option.</p>
-                </div>
-            </div>
-        </section>
-        <section class="popular__section">
-            <div class="container">
-                <h3>2024 Most Popular on Digital Pecunia</h3>
+                <!-- Current Account -->
                 <div class="card__each">
-                            <div class="card__ribbon" data-label="Our Most Popular"></div>
-                            <div class="card__logo">
-                                <img src="./src/img/jp-morgan.png" alt="jp-morgan">
-                                <div class="card__rating">
-                                    <p>9.8</p>
-                                    <div class="rating__block">
-                                        <div class="Stars" style="--rating: 4.3;"></div>
-                                        <p>Pecunia Score</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__deatils">
-                                <h3>J. P. Morgan</h3>
-                                <p>Build your portfolio &amp; start trading with J.P. Morgan Self-Directed Investing</p>
-                                <ul>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>No minimum to open an account &amp; start trading</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Unlimited commission-free online trades</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span>Get up to $700 when opening a new account⁵</span>
-                                    </li>
-                                    <li>
-                                        <img src="./src/img/check.svg" alt="check">
-                                        <span><b>Easy access on the Chase Mobile® app</b></span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card__cta">
-                                <a href="#">Visit site
-                                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"></path>
-                                    </svg>
-                                </a>
-                                <p>75% of retail investor accounts lose money when trading leveraged products with this provider.</p>
-                            </div>
+                    <div class="card__name">
+                        <h3>Current Account</h3>
+                        <div class="icon-cta">
+                            <img src="./src/img/bank.svg" alt="icon">
+                            <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
                         </div>
+                    </div>
+                    <div class="card__details">
+                        <p><b>Find the perfect current account</b> that meets your daily banking needs, from salary deposits to bill payments.</p>
+                        <ul>
+                            <li>
+                                <b>No monthly fees</b>
+                            </li>
+                            <li>
+                                <b>Easy online</b> banking <b>access</b>
+                            </li>
+                            <li>
+                                <b>ATM network</b> availability
+                            </li>
+                        </ul>
+                        <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="bottom__bar">
+                        <div>
+                            <img src="./src/img/ca-1.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-2.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-3.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-4.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-5.svg" alt="account">
+                        </div>
+                    </div>
+                </div>
+                <!-- Credit and Debit Cards -->
+                <div class="card__each">
+                    <div class="card__name">
+                        <h3>Credit and Debit Cards</h3>
+                        <div class="icon-cta">
+                            <img src="./src/img/card.svg" alt="icon">
+                            <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card__details">
+                        <p><b>Choose from a range of credit and debit cards</b> designed for everyday purchases and long-term spending flexibility.</p>
+                        <ul>
+                            <li>
+                                <b>Low-interest</b> rates
+                            </li>
+                            <li>
+                                <b>EReward programs</b> (cashback, points)
+                            </li>
+                            <li>
+                                <b>Global acceptance</b>
+                            </li>
+                        </ul>
+                        <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="bottom__bar">
+                        <div>
+                            <img src="./src/img/cdc-1.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/cdc-2.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/cdc-3.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/cdc-4.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/cdc-5.svg" alt="account">
+                        </div>
+                    </div>
+                </div>
+                <!-- Savings Account -->
+                <div class="card__each">
+                    <div class="card__name">
+                        <h3>Savings Account</h3>
+                        <div class="icon-cta">
+                            <img src="./src/img/vault.svg" alt="icon">
+                            <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card__details">
+                        <p><b>Discover savings accounts</b> tthat offer secure growth for your money with competitive interest rates.</p>
+                        Compare the best money transfer services to send funds quickly and securely, whether domestically or internationally.
+                        <ul>
+                            <li>
+                                <b>High-interest rates</b>
+                            </li>
+                            <li>
+                                <b>Flexible</b> withdrawal options
+                            </li>
+                            <li>
+                                <b>No minimum balance</b> requirements
+                            </li>
+                        </ul>
+                        <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="bottom__bar">
+                        <div>
+                            <img src="./src/img/ca-1.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-2.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-3.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-4.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-5.svg" alt="account">
+                        </div>
+                    </div>
+                </div>
+                <!-- Money Transfer -->
+                <div class="card__each">
+                    <div class="card__name">
+                        <h3>Money Transfer</h3>
+                        <div class="icon-cta">
+                            <img src="./src/img/transfer.svg" alt="icon">
+                            <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card__details">
+                        <p><b>Compare the best money transfer services</b> to send funds quickly and securely, whether domestically or internationally.</p>
+                        <ul>
+                            <li>
+                                <b>Low transfer</b> fees
+                            </li>
+                            <li>
+                                <b>Competitive exchange</b> rates
+                            </li>
+                            <li>
+                                <b>Fast transfer</b> times
+                            </li>
+                        </ul>
+                        <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="bottom__bar">
+                        <div>
+                            <img src="./src/img/ca-1.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-2.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-3.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-4.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-5.svg" alt="account">
+                        </div>
+                    </div>
+                </div>
+                <!-- Brokerage Account -->
+                <div class="card__each">
+                    <div class="card__name">
+                        <h3>Brokerage Account</h3>
+                        <div class="icon-cta">
+                            <img src="./src/img/bank.svg" alt="icon">
+                            <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="card__details">
+                        <p><b>Open a brokerage account</b> to start investing in stocks, ETFs, and more, with tools and resources to help you grow your wealth.</p>
+                        <ul>
+                            <li>
+                                <b>Low commission</b> fees
+                            </li>
+                            <li>
+                                <b>Wide range</b> of investment options
+                            </li>
+                            <li>
+                                <b>User-friendly</b> trading platforms
+                            </li>
+                        </ul>
+                        <a href="#">Vai
+                            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.42898 16.0711L8.50005 9L1.42898 1.92893" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="bottom__bar">
+                        <div>
+                            <img src="./src/img/ca-1.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-2.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-3.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-4.svg" alt="account">
+                        </div>
+                        <div>
+                            <img src="./src/img/ca-5.svg" alt="account">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="letter-p">
+            <img src="./src/img/P.svg" alt="Digital Pecunia">
+        </div>
+        <section class="home-swiper">
+            <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="home-slide">
+                        <div class="container">
+                            <h3>5mio users over the past year</h3>
+                            <p>In the past year, our platform has attracted 5 million users, showcasing our strong market presence and the trust users place in us.This growth reflects our commitment to quality and user satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-slide h-slide-2">
+                        <div class="container">
+                            <h3>Over 700k users connected to their best choice in the last 12 months</h3>
+                            <p>Over 700,000 users have found their ideal solutions through our platform in the past year. This achievement highlights our effectiveness in matching users with the best options, ensuring personalized and satisfactory outcomes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home-slide h-slide-3">
+                        <div class="container">
+                            <h3>Operating in over 60 countries</h3>
+                            <p>We now operate in over 60 countries, serving a diverse global customer base. Our extensive reach demonstrates our ability to adapt and thrive in various markets, meeting the needs of users worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="bottom__text">
+                    <h3>We simplify your search for the best financial products</h3>
+                    <p>Whether you’re looking to open a savings account, invest in stocks, or secure a loan, we provide expert comparisons, reviews, and guides to help you make the right choice. Explore your options and start making smarter financial decisions today.</p>
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="container">
             <div class="footer__flex">
@@ -488,6 +458,7 @@ The information, including pricing, which appears on this site is subject to cha
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./src/js/main.js"></script>
 </body>
 </html>
